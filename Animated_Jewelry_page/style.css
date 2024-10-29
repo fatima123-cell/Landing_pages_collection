@@ -17,17 +17,16 @@ body {
         overflow: hidden; 
     color: rgb(41, 7, 7);
 }
-/* Navigation Bar Styles */
-/* Transparent Navigation Bar */
+
 nav {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: transparent; /* Transparent background */
+    background-color: transparent; 
     text-align: center;
     padding: 15px 0;
-    z-index: 100; /* Ensure it stays above other elements */
-    pointer-events: none; /* Ensure the navbar does not affect section hover effects */
+    z-index: 100; 
+    pointer-events: none; 
 }
 
 .navbar {
@@ -38,12 +37,12 @@ nav {
     gap: 20px;
     padding: 10px 20px;
     border-radius: 10px;
-    pointer-events: auto; /* Allow interaction with the navbar */
+    pointer-events: auto; 
 }
 
 .navbar li {
     display: inline;
-    position: relative; /* Required for the hover effect */
+    position: relative; 
 }
 
 .navbar a {
@@ -180,7 +179,7 @@ nav {
     transition: cubic-bezier(0.71, 0, 0.38, 1) 1.2s;
 }
 
-/* Specific positioning for items in gold and silver sections */
+/* position for items in gold and silver section */
 .layer:nth-child(1) .items img:nth-child(1) {
     width: 125px;
     transform: translate(calc(-50% - 225px), calc(-50% - 150px));
