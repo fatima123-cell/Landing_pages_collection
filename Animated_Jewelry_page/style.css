@@ -1,0 +1,258 @@
+/* Keyframes for continuous rotation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+        overflow: hidden; 
+    color: rgb(41, 7, 7);
+}
+/* Navigation Bar Styles */
+/* Transparent Navigation Bar */
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent; /* Transparent background */
+    text-align: center;
+    padding: 15px 0;
+    z-index: 100; /* Ensure it stays above other elements */
+    pointer-events: none; /* Ensure the navbar does not affect section hover effects */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    pointer-events: auto; /* Allow interaction with the navbar */
+}
+
+.navbar li {
+    display: inline;
+    position: relative; /* Required for the hover effect */
+}
+
+.navbar a {
+    color: rgb(41, 7, 7);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Hover effect: animated underline */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color:  rgb(41, 7, 7); /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Animation for the underline */
+}
+
+.navbar a:hover::after {
+    width: 100%; /* Expands underline to full width on hover */
+}
+
+/* Hover effect: background and text color */
+
+
+.center {
+    width: 100%;
+    height: 100%; /* Adjust for header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.layers {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    transition: cubic-bezier(0.71, 0, 0.38, 1) 0.8s;
+}
+
+.layer {
+    width: 100vw;
+    height: 100vh; /* Adjusted to cover the entire viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.gold {
+    background-color: rgb(255, 239, 219);
+}
+
+.silver {
+    background-color: rgb(245, 212, 237);
+}
+
+.container {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+/* Continuous rotation effect applied to the ring */
+.ring {
+    width: 200px;
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+
+.ring img {
+    width: 200px;
+}
+
+.layer label {
+    display: block;
+    font-family: poppins;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 0.5mm solid black;
+    border-radius: 10mm;
+    cursor: pointer;
+    margin-top: 75px;
+}
+
+#toggle {
+    display: none;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: poppins;
+    font-size: 175px;
+    font-weight: 500;
+    color: rgb(255, 213, 159);
+    transition: cubic-bezier(0.71, 0, 0.38, 1) 1.2s;
+}
+
+.items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.71, 0, 0.38, 1) 1.2s;
+}
+
+.items img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.71, 0, 0.38, 1) 1.2s;
+}
+
+/* Specific positioning for items in gold and silver sections */
+.layer:nth-child(1) .items img:nth-child(1) {
+    width: 125px;
+    transform: translate(calc(-50% - 225px), calc(-50% - 150px));
+}
+
+.layer:nth-child(1) .items img:nth-child(2) {
+    width: 180px;
+    transform: translate(calc(-50% + 275px), calc(-50% - 50px));
+}
+
+.layer:nth-child(1) .items img:nth-child(3) {
+    width: 250px;
+    transform: translate(calc(-50% - 175px), calc(-50% + 115px));
+}
+
+.layer:nth-child(2) .text {
+    color: rgba(52, 4, 45, 0.801);
+}
+
+.layer:nth-child(2) .items img:nth-child(1) {
+    width: 75px;
+    transform: translate(calc(-50% + 180px), calc(-50% + 90px));
+}
+
+.layer:nth-child(2) .items img:nth-child(2) {
+    width: 300px;
+    transform: translate(calc(-50% + 225px), calc(-50% - 125px));
+}
+
+.layer:nth-child(2) .items img:nth-child(3) {
+    width: 200px;
+    transform: translate(calc(-50% - 200px), calc(-50% + 50px));
+}
+
+/* Toggle transitions between sections */
+#toggle:checked ~ .main .layers {
+    transform: translateX(-50%);
+}
+
+#toggle:checked ~ .main .layers .layer:nth-child(1) .container,
+#toggle:not(:checked) ~ .main .layers .layer:nth-child(2) .container {
+    left: -50%;
+}
+
+#toggle:checked ~ .main .layers .layer:nth-child(1) .text,
+#toggle:not(:checked) ~ .main .layers .layer:nth-child(2) .text {
+    left: 150%;
+}
+
+#toggle:checked ~ .main .layers .layer:nth-child(1) .items,
+#toggle:not(:checked) ~ .main .layers .layer:nth-child(2) .items {
+    left: 125%;
+}
+
+#toggle:not(:checked) ~ .main .layers .layer:nth-child(2) .items img,
+#toggle:checked ~ .main .layers .layer:nth-child(1) .items img {
+    transform: translate(-100%, -50%);
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+
