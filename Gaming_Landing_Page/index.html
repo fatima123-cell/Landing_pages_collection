@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./img/logo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Game</a></li>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">Download</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero-section">
+    <video class="background-video" autoplay loop muted>
+      <source src="./vid/main_bkg_video2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <div class="character">
+        <img src="./img/h1_img-3.png" alt="Character Image">
+      </div>
+      <div class="text-content">
+        <h1 class="fancy-heading">Level Up Your Gaming Experience</h1>
+        <p>Join the ultimate gaming platform and explore an endless world of adventure. Ready for some advanture.Hope
+          you enjoy the game.</p>
+        <div class="container">
+          <div class="btn"><a href="#">Start Game</a></div>
+          <div class="btn"><a href="#">Read More</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="treasure-hunt">
+    <h1 class="fancy-heading" data-aos="fade-up">Treasure Hunt</h1>
+
+    <div class="treasure-box" data-aos="zoom-in" data-aos-delay="300">
+      <img src="./img/box.png" alt="Treasure Box">
+    </div>
+
+    <!-- Right container -->
+    <div class="instruction-container right-container" data-aos="fade-right" data-aos-delay="300">
+      <div class="line_right"></div>
+      <div class="instruction-box">Look to the right for clues!</div>
+    </div>
+
+    <!-- Bottom container -->
+    <div class="instruction-container bottom-container" data-aos="fade-down" data-aos-delay="300">
+      <div class="line_vertical"></div> <!-- Vertical Line -->
+      <div class="instruction-box">Search below the treasure!</div> <!-- Instruction Box -->
+    </div>
+
+  </section>
+
+
+ 
+
+  <div class="ag-carousel-block">
+    <!-- Background Video -->
+    <video class="background-video" autoplay loop muted>
+      <source src="./vid/carasoul_vid_3.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1 class="fancy-heading">Meet Our Characters</h1>
+    <div class="ag-format-container">
+      <div class="ag-carousel-arrow_box">
+        <i class="js-ag-carousel-arrow_prev ag-carousel-arrow">
+          <svg class="svg-arrow-left">
+            <use xlink:href="#ag-arrow-left"></use>
+          </svg>
+        </i>
+
+        <i class="js-ag-carousel-arrow_next ag-carousel-arrow">
+          <svg class="svg-arrow-right">
+            <use xlink:href="#ag-arrow-right"></use>
+          </svg>
+        </i>
+      </div>
+    </div>
+
+    <div class="ag-carousel_box">
+      <ul id="js-carousel" class="js-carousel ag-carousel_list">
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt1.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Lorem ipsum
+              </div>
+              <div class="ag-carousel_doctor">
+                Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+                sit amet adipiscing sem neque
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt2.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Aenean massa
+              </div>
+              <div class="ag-carousel_doctor">
+                Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt3.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Donec quam
+              </div>
+              <div class="ag-carousel_doctor">
+                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+                viverra quis, feugiat a, tellus
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt4.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Nulla consequat
+              </div>
+              <div class="ag-carousel_doctor">
+                Deras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt5.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Nullam dictum
+              </div>
+              <div class="ag-carousel_doctor">
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet
+                a, venenatis vitae, justo
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt6.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Aliquam lorem
+              </div>
+              <div class="ag-carousel_doctor">
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt7.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Etiam ultricies
+              </div>
+              <div class="ag-carousel_doctor">
+                Cum sociis natoque penatibus et magnis dis parturient montes
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt8.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Nullam quis ante
+              </div>
+              <div class="ag-carousel_doctor">
+                Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi
+                vel augue
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt9.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Duis leo
+              </div>
+              <div class="ag-carousel_doctor">
+                Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+                condimentum rhoncus, sem quam semper libero
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt10.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Donec vitae
+              </div>
+              <div class="ag-carousel_doctor">
+                Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt11.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Lorem ipsum
+              </div>
+              <div class="ag-carousel_doctor">
+                Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero,
+                sit amet adipiscing sem neque
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt12.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Aenean massa
+              </div>
+              <div class="ag-carousel_doctor">
+                Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="ag-carousel_item">
+          <a href="#">
+            <figure class="ag-carousel_figure">
+              <img src="./img/chrt13.png" class="ag-carousel_img" alt="">
+            </figure>
+
+            <div class="ag-carousel_descr">
+              <div class="ag-carousel_name">
+                Donec quam
+              </div>
+              <div class="ag-carousel_doctor">
+                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+                viverra quis, feugiat a, tellus
+              </div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <svg style="display: none">
+    <symbol id="ag-arrow-left" viewBox="0 0 7 12">
+      <g>
+        <path d="M6 0.999512L1 5.99951L6 10.9995" fill="transparent" stroke="white" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </g>
+    </symbol>
+
+    <symbol id="ag-arrow-right" viewBox="0 0 7 12">
+      <g>
+        <path d="M1 10.9995L6 5.99951L1 0.999512" fill="transparent" stroke="white" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </g>
+    </symbol>
+  </svg>
+
+
+
+  <section class="find-your-way">
+    <div class="content-container">
+      <h1 class="fancy-heading">Find Your Way to the Destination!</h1>
+      <p class="description">Navigate through the map and uncover hidden paths to reach your destination. Will you make
+        it to the end?</p>
+      <button class="explore-button">Start Your Journey</button>
+    </div>
+  </section>
+
+  <section class="main-base-section">
+    <div class="content">
+      <!-- Left: Character -->
+      <div class="character-container">
+        <img src="./img/chrt1.png" alt="Character" class="character">
+      </div>
+
+      <!-- Right: Bullet Points -->
+      <div class="bullet-points">
+        <h1 class="fancy-heading">Your Victory Awaits!</h1>
+        <ul class="points-list">
+          <li>Discover endless possibilities.</li>
+          <li>Achieve your goals with ease.</li>
+          <li>Unlock hidden treasures.</li>
+          <li>Shine brighter with success!</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about-us" class="hidden">
+    <div class="about-container">
+      <!-- Left Side: Image -->
+      <div class="about-image">
+        <img src="./img/chrt4.png" alt="Joystick Image" />
+      </div>
+      <!-- Right Side: Content -->
+      <div class="about-content">
+        <h2 class>About Us</h2>
+        <p>
+          Welcome to our gaming universe! We are passionate about creating thrilling and immersive games
+          that bring fun and excitement to players worldwide. Our mission is to push the boundaries of
+          gaming and deliver unforgettable experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-overlay">
+      <div class="footer-content">
+        <!-- Column 1 -->
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            We are dedicated to delivering the best gaming experiences, blending fun with creativity.
+            Join our journey and explore the exciting world of gaming!
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>Email: support@gamingsite.com</p>
+          <p>Phone: +123-456-7890</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Nex-Coder. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-out', // Animation easing
+      once: true, // Whether animation should happen only once
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
