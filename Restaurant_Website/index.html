@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./img/logo.png" alt="Logo" />
+      </div>
+      <h1 id="header-heading">The best for<br />the brightest.</h1>
+      <p id="header-para">Welcome to our restaurant where flavors come
+        alive.</p>
+      <!-- Navbar (Links) -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Slides -->
+      <div class="hd" data-heading="Delicious Spaghetti"
+        data-para="Freshly made spaghetti with rich tomato sauce."
+        style="background-image: url('./img/home-slide-1.jpg.webp')">
+        <div class="overlay"></div>
+      </div>
+      <div class="hd" data-heading="Cheesy Pizza"
+        data-para="Our signature pizza topped with mozzarella and basil."
+        style="background-image: url('./img/home-slide-2.jpg.webp')">
+        <div class="overlay"></div>
+      </div>
+      <div class="hd" data-heading="Crispy Spring Rolls"
+        data-para="Crunchy spring rolls with savory fillings."
+        style="background-image: url('./img/home-slide-3.jpg.webp')">
+        <div class="overlay"></div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls-container">
+        <div class="control"></div>
+        <div class="control"></div>
+        <div class="control"></div>
+      </div>
+    </div>
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">&#8679;</button>
+
+
+    <div class="menu-container">
+      <h1>From Our Menu</h1>
+      <!-- Menu Sections -->
+      <hr>
+      <div class="menu-section" data-cuisine="chinese">
+        <h2>Chinese </h2>
+        <p>Discover the flavors of authentic <br> Chinese dishes made with fresh
+          ingredients and rich traditions.</p>
+        <div class="images-container"></div> <!-- Container for images -->
+      </div>
+      <hr>
+      <div class="menu-section" data-cuisine="italian">
+        <h2>Italian</h2>
+        <p>Indulge in classic Italian recipes <br> that bring the taste of Italy to
+          your plate.</p>
+        <div class="images-container"></div> <!-- Container for images -->
+      </div>
+      <hr>
+      <div class="menu-section" data-cuisine="japanese">
+        <h2>Japanese </h2>
+        <p>Experience the delicate and artful dishes of Japan, <br> crafted to
+          perfection.</p>
+        <div class="images-container"></div> <!-- Container for images -->
+      </div>
+      <hr>
+      <div class="menu-section" data-cuisine="cocktail">
+        <h2>Cocktail</h2>
+        <p>Enjoy a wide selection of creative and refreshing cocktails, <br> crafted
+          just for you.</p>
+        <div class="images-container"></div> <!-- Container for images -->
+      </div>
+      <hr>
+      <div class="menu-section" data-cuisine="wine">
+        <h2>Wine</h2>
+        <p>Savor the finest wines from around the world, <br> carefully selected for
+          every occasion.</p>
+        <div class="images-container"></div> <!-- Container for images -->
+      </div>
+      <hr>
+    </div>
+
+
+
+    
+ 
+    <div class="bar_section">
+      <div class="bar_video">
+        <video autoplay="autoplay" loop="loop" muted="muted">
+          <source src="./vid/video_bar.mp4">
+        </video>
+      </div>
+      <div class="bar_card">
+        <h4>
+          THE HOME OF LIVE <br>
+          MUSIC COCKTAIL <br>
+          GOOD TIME IN <br>
+          FIDAGLGO BAR <br>
+        </h4>
+        <pre style="font-size: 16px;">
+     Dance.Play.Enjoy
+    </pre>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illum
+          eos sed, excepturi beatae enim soluta repellendus aliquid <br>
+          temporibus optio mollitia perferendis vitae <br> pariatur unde
+          nostrum! Vel quaerat, animi consectetur <br> doloribus laboriosam
+          veritatis doloremque beatae <br> quasi voluptates ipsa consequatur
+          consequuntur <br> enim blanditiis recusandae. Earum, itaque
+          numquam.</p>
+      </div>
+      <div class="bar_image">
+        <img src="./img/bar_girl_img.jpg" alt="Bar Girl">
+      </div>
+    </div>
+
+
+
+    <section class="dishes_section">
+      <h2>ONLY THE FINEST FOOD & <br> GREAT SERVICE</h2>
+      <div class="slider_container">
+        <div class="slider">
+          <!-- Duplicate images to create an infinite effect -->
+          <img src="./img/ita_food_2.jpg">
+          <div class="heading"><h1>Risotto Vegetable</h1></div>
+          <img src="./img/ja_food_1.jpg" alt="Dish 2">
+          <div class="heading"><h1>Fettuccine al Sussi</h1></div>
+          <img src="./img/wine_3.jpg" alt="Dish 4">
+          <div class="heading"><h1>Finest Wine</h1></div>
+          <img src="./img/ita_food_4.jpg" alt="Dish 5">
+          <div class="heading"><h1>Shrimp Risotto</h1></div>
+          <img src="./img/ita_food_1.jpg">
+          <div class="heading"><h1>Risotto Vegetable</h1></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="video-section">
+      <video autoplay muted loop class="bg-video">
+        <source src="./vid/memories.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="content">
+        <h1>For the best memories</h1>
+        <button class="custom-button">Book a table</button>
+      </div>
+    </div>
+
+
+
+    <div class="book_table_section">
+      <h2>Book A Table</h2>
+      <div class="book_table_form">
+        <!-- Dropdown for number of people -->
+        <select class="dropdown" id="people">
+          <option value="1">1 Person</option>
+          <option value="2">2 People</option>
+          <option value="3">3 People</option>
+          <option value="4">4 People</option>
+          <option value="5">5 People</option>
+          <option value="6+">6+ People</option>
+        </select>
+
+        <!-- Date input -->
+        <input type="date" class="input-field" id="date">
+
+        <!-- Time input -->
+        <input type="time" class="input-field" id="time">
+
+        <!-- Book Table Button -->
+        <button class="custom-button">Book Table</button>
+      </div>
+    </div>
+
+
+    <section class="visit-us">
+      <div class="video-container">
+          <video autoplay loop muted>
+              <source src="./vid/visit_us.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      <div class="info-container">
+          <h2>Visit Us</h2>
+          <p><strong>Address:</strong> 123 Food Street, Gourmet City, Delicious Land</p>
+          <p><strong>Opening Hours:</strong></p>
+          <ul>
+              <li>Monday - Friday: 9:00 AM - 9:00 PM</li>
+              <li>Saturday - Sunday: 10:00 AM - 10:00 PM</li>
+          </ul>
+      </div>
+  </section>
+
+  
+  <footer class="footer-section">
+    <div class="footer-container">
+      <!-- Column 1: About Us -->
+      <div class="footer-column">
+        <h3 class="footer-title">About Us</h3>
+        <p>
+          Welcome to our restaurant! We serve delicious meals made with fresh, quality ingredients.
+        </p>
+      </div>
+  
+      <!-- Column 2: Quick Links -->
+      <div class="footer-column">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Column 3: Contact Info -->
+      <div class="footer-column">
+        <h3 class="footer-title">Contact</h3>
+        <p>Email: contact@restaurant.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Food Street, Gourmet City</p>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2025 Your Restaurant Name. All rights reserved.</p>
+  </footer>
+  
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
